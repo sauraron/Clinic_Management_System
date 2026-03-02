@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Bacgrkound ng Login */
+.login-bg {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../img/bestlink.jpg") center/cover no-repeat; /* blurred na background */
+    filter: blur(8px);
+    transform: scale(1.05);
+    z-index: -1;
+}
+
+/* Login Cadr */
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255,255,255,0.96);
+    padding: 28px 26px;
+    border-radius: 10px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+}
+
+/* Background at Login Logo size */
+.school-logo { width: 70px; }
+.clinic-logo { width: 60px; }
+
+/* Login Button */
+.btn-login {
+    background: #0d1b7e;
+    color: #fff;
+    font-weight: 600;
+    height: 44px;
+    border-radius: 6px;
+    border: none;
+}
+
+.btn-login:hover {
+    background: #093ba7;
+}
+
+/* Instructions sa baba ng Login */
+.instruction-box {
+    background: #eef2f7;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.instruction-box ol {
+    margin: 0;
+    padding-left: 18px;
+}
+
+/* responsiveness sa kahit anong screen size */
+@media (max-width: 576px) {
+    .login-card {
+        margin: 15px;
+    }
+}
+
+.toggle-password {
+    cursor: pointer;
+}
