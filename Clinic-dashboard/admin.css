@@ -1,0 +1,147 @@
+:root {
+    --primary: #2563eb;
+    --sidebar: #030b55;
+    --bg: #f1f5f9;
+    --white: #ffffff;
+    --text: #111827;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+}
+
+.container {
+    display: flex;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    width: 260px;
+    background: var(--sidebar);
+    height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar-logo {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 15px;
+}
+
+.sidebar-logo img {
+    width: 65px;
+    margin-bottom: 8px;
+}
+
+.system-name {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+/* SIDEBAR LINKS WITH ICONS */
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.sidebar a i {
+    width: 18px;
+    text-align: center;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: var(--primary);
+}
+
+.sidebar-footer{
+    padding:15px;
+    border-top:1px solid rgba(255,255,255,0.2);
+}
+
+.sidebar-footer a{
+    color:white;
+    text-decoration:none;
+}
+
+/* ================= MAIN ================= */
+.main {
+    flex: 1;
+    padding: 25px;
+}
+
+.main h2 {
+    margin-top: 0;
+}
+
+/* ================= CARDS ================= */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card strong {
+    font-size: 22px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* ================= TABLE ================= */
+.table-box {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+th {
+    background: #f8fafc;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+    text-align: left;
+}
+
+.action-btn {
+    padding: 6px 10px;
+    background: var(--primary);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+}
